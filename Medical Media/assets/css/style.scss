@@ -1,0 +1,372 @@
+#head{
+    background-color: #047EB3;
+    height: 140px;
+    .example{
+        font-size: 30px;
+        color: white;
+        margin-top: 20px;
+        a{
+            color: white;
+            text-decoration: none; 
+        } 
+    }
+    .nav{
+        a{
+            color: white;
+            margin-top: 20px;
+            margin-left: 20px;
+            font-size: 17px;
+        }
+    }
+}
+%extend-news{
+    margin-left: 20px;
+    color: white;
+    border-radius: 15px;
+    background-color: #047EB3;
+    text-decoration: none;
+    width: 300px;
+    height: 65px;
+    padding: 5px;
+    text-align: center;
+}
+#head-news{
+    
+    height: 100px;
+    .row{
+        position: relative;
+        display: flex;
+        h5{
+           position: absolute;
+           top: 35px;
+        }  
+    }
+    a{
+        @extend %extend-news;
+        position: relative;
+        left: 200px;
+        top: 20px 
+    }
+    h6{
+        @extend %extend-news;
+        width: 200px;
+        height: 50px;
+        position: relative;
+        left: 200px;
+        top: 20px
+    }
+    .kidney{
+        width: 150px;
+    }
+}
+#fast-news{
+    .big-picture{
+        margin-top: 20px;
+        
+        img{
+            position: absolute;
+        }
+        h4{
+            position: relative;
+            top: 50px;
+            left: 20px;
+            width: 200px;
+            color: white;
+        }
+        h2{
+            
+            position: relative;
+            top: 50px;
+            left: 20px;
+            width: 200px;
+            color:white;
+
+        }
+        %extend-btn{
+            font-size: 20px;
+            background-color: #047EB3;
+            color: white;
+            border-radius: 13px;
+            padding: 5px;
+            width: 160px;
+        
+            cursor: progress;
+        }
+        .btn{
+            @extend %extend-btn;
+            position: relative;
+            top: 100px;
+            left: 200px; 
+        }
+        %extend-picture{
+            width: 270px;
+            height: 200px;
+            position: absolute;
+            top: 472px;
+            left: 750px;
+    
+        }
+
+
+        .small-picture{
+           
+            img{
+                @extend %extend-picture ;
+            }
+            p{
+                position: absolute;
+                left: 760px;
+                top: 480px;
+                font-size: 15px;
+                width: 150px;
+                color: white;
+            }
+            h2{
+                
+                position: relative;
+                top: 40px;
+                left: 700px;
+                width: 200px;
+                color:white;
+    
+            }
+            .btn2{
+            @extend %extend-btn;
+            position: relative;
+            top: 35px;
+            left: 700px;  
+            }   
+        }
+        .small-picture2{
+            img{
+                width: 270px;
+                height: 200px;
+                top: 260px;
+                left: 750px;
+            }
+            p{
+                position: absolute;
+                left: 760px;
+                top: 280px;
+                font-size: 15px;
+                width: 150px;
+                color: white;   
+            }
+            h2{
+                position: absolute;
+                top: 370px;
+                left: 810px;
+                
+                width: 200px;
+                color:white;
+            }
+            .btn3{
+                @extend %extend-btn;
+                position: absolute;
+                top: 410px;
+                left: 810px; 
+            }
+        }
+    }
+    .scrool{
+        position: absolute;
+        top: 300px;
+        left: 1010px;
+
+        ul{
+            overflow-y: scroll;
+            
+            width: 330px;
+            height: 250px;
+            li{
+                width: 100%;
+                border: 1px solid gray;  
+                list-style: none;
+            }
+            a{
+                text-decoration: none;
+            }
+         }
+         h6{
+            margin-left: 20px;
+        }
+    }
+    
+    
+}
+#stand-out{
+
+    .row{
+        .front-news{
+            h1{
+                
+                position: absolute;
+                top: 700px;
+            }
+        }
+        .front{
+            display: flex; 
+        }
+        .medium{
+            display: flex;
+            width:250px;
+            height: 300px;
+            margin-top: 190px;
+            position: relative;
+        }
+    }
+    .card{
+        margin-left: 20px;
+
+        a{
+            text-decoration: none;
+        }
+    }
+}
+#live{
+    
+    h1{
+        margin-top: 100px;
+      
+    }
+   
+    img{
+        position: relative;
+        top: 100px;
+        font-size: 100px;
+        background-color: black;
+        width: 600px;
+        height: 400px;
+        padding: 100px;
+        color: black;
+        
+    }
+    .btn1{
+        width: 180px;
+        height: 50px;
+        background-color: white;
+        color: blue;
+        border-radius: 13px;
+    }
+    .btn2{
+        width: 180px;
+        height: 50px;
+        background-color: #047EB3;
+        color: white;
+        border-radius: 13px;
+
+    }
+    .pragram{
+        margin-left: 230px;
+        text-align: center;
+        position: absolute;
+        top: 1200px;
+    } 
+}
+#reklam{
+    .row{
+        margin-top: 140px;
+    }
+}
+#termin{
+    margin-top: 50px;
+    .btn3{
+        @extend %extend-btn;
+        height: 50px;
+        border-radius: 17px;
+       
+        margin-top: 20px;
+        color: white;
+        width: 180px;
+        background-color: #047EB3;
+    }
+
+}
+#finish{
+    background-color: #047EB3;
+    height: 400px;
+    width: 100%;
+    margin-top: 30px;
+
+    .row{
+        position: relative;
+    }
+    .logo{
+        margin-top: 30px;
+        h5{
+            width: 300px;
+            color: white;
+        }
+    }
+    .pages{
+
+        li{
+            list-style: none;
+        }
+        position: absolute;
+        left: 400px;
+        top: 30px ;
+        color: white;
+        a{
+            color: white;
+            text-decoration: none;
+        }
+      
+    }
+    .info{
+        li{
+            list-style: none;
+        }
+        position: absolute;
+        left: 600px;
+        top: 30px ;
+        color: white;
+        a{
+            color: white;
+            text-decoration: none;
+        }
+
+    }
+    .tel{
+        li{
+            list-style: none;
+        }
+        position: absolute;
+        left: 880px;
+        top: 30px ;
+        color: white;
+        a{
+            color: white;
+            text-decoration: none;
+        }
+
+    }
+    .email{
+        margin-top: 100px;
+    }
+    p{
+        color: white;
+    }
+    .footer-button{
+        border-radius: 17px;
+        width: 130px;
+        height: 30px;
+        background-color: #047EB3;
+        color: white;
+    }
+    .icons{
+        
+        position: absolute;
+        top: 200px;
+        left: 900px;
+        font-size: 30px;
+       padding: 20px;
+       color: white;
+    }
+
+
+}
+
+
+
+

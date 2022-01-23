@@ -1,0 +1,111 @@
+$background-color: black;
+$writing-color: white;
+
+%extend-btn{
+    background-color: orange;
+    color: white;
+    font-size: 20px;
+    border-radius: 7px;
+    border-color: white;
+}
+.head{
+    background-color: $background-color;
+    height: 70px;
+    position: relative;
+    a{
+        color: $writing-color;
+        text-decoration: none;
+        cursor: pointer;
+        padding: 10px;
+    }
+    .navbar{
+        position: absolute;
+        top: 5px ;
+        left: 920px;
+    }
+    .icons{
+        position: absolute;
+        top: 5px;
+        left: 250px;
+        font-size: 40px;
+        color: $writing-color;
+    }
+}
+#Main-Lorem{
+    width: 400px;
+    position: relative;
+    top: 20px;
+    left: 250px;
+    font-size: 20px;
+
+    .image{
+        position: absolute;
+        top: 15px;
+        left: 500px;
+        img{
+            width: 580px;
+            height: 280px;
+        }
+    }
+    .btn{
+        @extend %extend-btn;
+    }
+}
+#Heading{
+    h3{
+        margin-top: 90px;
+        margin-left: 50px;
+    }
+   .row{
+       margin-top: 30px
+   }
+   .card{
+       margin-left: 60px;
+       img{
+           height: 200px
+       } 
+   }
+   .btn{
+    @extend %extend-btn;
+   }
+}
+.finish{
+    background-color: black;
+    height: 400px;
+    margin-top: 100px;
+    .foot{
+        margin-left: 250px;
+        margin-top: 110px;
+        img{
+            height: 20px;
+        }
+        span{
+            color: white;
+        }
+        h3{
+            color: white;
+        }
+    }
+    .about{
+        margin-top: 110px;
+        position: absolute;
+        left: 600px;
+        
+        width: 400px;
+        h3{
+            color: white;
+        }
+        p{
+            color: white;
+        }
+    }
+    .icons{
+        margin-left: 400px;
+        margin-top: 100px;
+        color: white;
+        li{
+            list-style: none;
+        }
+       
+    }
+}
